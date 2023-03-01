@@ -68,6 +68,7 @@ public class Pizza {
     public String getBill(){
         // your code goes here
         if(isbillgenerate==false){
+            isbillgenerate=true;
             if(exracheeseadded==true){
                 this.bill=this.bill+"Extra Cheese Added: "+extracheeseprise+"\n";
             }
@@ -79,7 +80,7 @@ public class Pizza {
             }
             this.bill = this.bill+"Total Price: "+this.price+"\n";
         }
-        return bill;
+        return this.bill;
 
     }
 }
